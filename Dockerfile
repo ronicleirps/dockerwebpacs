@@ -6,7 +6,7 @@ WORKDIR  /
 
 RUN mkdir ovitmp && \
     cd ovitmp && \
-    curl https://github.com/ronicleirps/webpacs/blob/master/Oviyam-2.7.1-bin.zip > oviyam.zip && \
+    curl https://github.com/ronicleirps/webpacs/raw/master/Oviyam-2.7.1-bin.zip > oviyam.zip && \
         unzip oviyam.zip
         
 RUN rm -R /usr/local/tomcat/webapps/ROOT/
